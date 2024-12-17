@@ -1,0 +1,19 @@
+﻿@model Tanitim.Models.Personel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+<form asp-controller="Zafer" asp-action="Edit">
+  <label>Personel Numara</label>
+  <input type="text" asp-for="PersId" />
+  <hr />
+  <label>Personel Ad</label>
+    <input type="text" asp-for="Ad" />
+    <hr />
+    <label>Personel Maas</label>
+    <input type="text" asp-for="Maas" />
+    <hr />
+    <input type="submit" value="Düzelt" class="btn btn-danger"/>
+
+</form>

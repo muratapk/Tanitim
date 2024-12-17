@@ -1,0 +1,16 @@
+﻿@model List<Tanitim.Models.Personel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<h4>Viewbag ile Gelen Veri:@ViewBag.Mehmet</h4>
+<h4>ViewData ile Gelen Veri:@ViewData["Zafer"]</h4>
+<h4>TempData ile Gelen Veri:@TempData["Enes"]</h4>
+@foreach(var ls in Model)
+{
+    <h1>Personel No:@ls.PersId</h1>
+    <h4>Personel Ad:@ls.Ad</h4>
+    <h5>Personel Maas:@ls.Maas</h5>
+    <hr />
+}

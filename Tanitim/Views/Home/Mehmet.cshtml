@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Mehmet";
+}
+
+<h1>Mehmet</h1>
+<h2>Web Sayfası</h2>
+<!--Razor Yapısı-->
+@{
+    int a = 10;
+    int b = 20;
+    int sonuc = a + b;
+    
+}
+<h3>@{
+        if(sonuc>30)
+        {
+            <h1>Geçti</h1>
+        }
+        else
+        {
+            <h2>Kaldı</h2>
+        }
+
+
+}</h3>
